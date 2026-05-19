@@ -27,6 +27,7 @@ services:
       DB_PASSWORD: crmpassword
       DB_NAME: crmdb
       APP_PORT: 8082
+      APPINSIGHTS_INSTRUMENTATIONKEY: "${APPINSIGHTS_INSTRUMENTATIONKEY:-}"
     ports:
       - "8082:8082"
     depends_on:
